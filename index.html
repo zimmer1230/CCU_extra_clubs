@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>國立中正大學 線上社團博覽會</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />        
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+    </script>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="https://studaffbh.ccu.edu.tw/files/11-1002-217.php">課外活動組</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-white font-weight-bold">國立中正大學 線上社團博覽會</h1>
+                        <hr class="divider" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 mb-5">為什麼要加入社團?因為社團就在那裡。</p>
+                        <a class="btn btn-primary btn-xl" href="#services"><span style="font-family:'Noto Sans TC', sans-serif ;">立即參觀</span></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Club type tags-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <h2 class="text-center">社團列表</h2>
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 text-center" >
+                        <div class="mt-5">
+                            <div class="mb-2">
+                                <i class="bi-pencil fs-1 text-primary"></i>
+                            </div>
+                            <button class="h4 mb-2 tablink" onclick="Open(event,'academic')" >
+                                <a href="#academic_clubs">學術性</a> 
+                                <hr class="position academic" >
+                            </button>
+                            <p class="text-muted mb-0">學術性社團以專門探究某種興趣或議題為宗旨所創立</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-award fs-1 text-primary"></i></div>
+                            <button class="h4 mb-2 tablink" onclick="Open(event,'sporting')">
+                                <a href="#sporting_clubs">體育性</a> 
+                                <hr class="position sporting" style="display: none;">                            
+                            </button>
+                            <p class="text-muted mb-0">體育性社團以特定體育活動項目為興趣，所創立的社團</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-emoji-smile fs-1 text-primary"></i></div>
+                            <button class="h4 mb-2 tablink" onclick="Open(event,'recreational')">
+                                <a href="#recreational_clubs">康樂性</a> 
+                                <hr class="position recreational" style="display: none;">                            
+                            </button>
+                            <p class="text-muted mb-0">康樂性社團是以某種休閒活動為宗旨的社團</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-people fs-1 text-primary"></i></div>
+                            <button class="h4 mb-2 tablink" onclick="Open(event,'fellowship')">
+                                <a href="#fellowship_clubs">聯誼性</a> 
+                                <hr class="position fellowship" style="display: none;">                            
+                            </button>
+                            <p class="text-muted mb-0">聯誼性社團是以聯誼活動為宗旨的社團</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+                            <button class="h4 mb-2 tablink" onclick="Open(event,'ministrant')">
+                                <a href="#ministrant_clubs">服務性</a> 
+                                <hr class="position ministrant" style="display: none;">                            
+                            </button>
+                            <p class="text-muted mb-0">服務社社團是以校外服務活動為宗旨的社團</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-palette fs-1 text-primary"></i></div>
+                            <button class="h4 mb-2 tablink" onclick="Open(event,'artistic')">
+                                <a href="#artistic_clubs">藝術性</a> 
+                                <hr class="position artistic" style="display: none;">                            
+                            </button>
+                            <p class="text-muted mb-0">藝術性社團是以特定藝術教學為宗旨的社團
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-music-note-beamed fs-1 text-primary"></i></div>
+                            <button class="h4 mb-2 tablink" onclick="Open(event,'musical')">
+                                <a href="#musical_clubs">音樂性</a> 
+                                <hr class="position musical" style="display: none;">                            
+                            </button>
+                            <p class="text-muted mb-0">音樂性社團是以特定音樂相關為興趣的社團</p>
+                        </div>
+                    </div>        
+                </div>           
+            </div>
+
+            <hr>
+            <!--Club List -->
+            <div id='portfolio'>
+                <div class="container clublist academic" id='academic_clubs' style="display: block;" >
+                    <div class="row gx-4 gx-lg-5">
+                        <div class="col-lg-4 col-md-6 text-center" >
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>光鹽社</h3>
+                                        <small>Light & Salt Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/groups/112262658856353/">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>辯言社</h3>
+                                        <small>Debate Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/ccudebate">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>天文社</h3>
+                                        <small>Astronomy Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/CCUAstro">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>書法研學社</h3>
+                                        <small>Calligraphy Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/ccucalligraphy/">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>法輪大法社</h3>
+                                        <small>Falundafa Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/ccufalundafa">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>領袖社</h3>
+                                        <small>Leader Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/ChanAtCCU/">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>生命活泉社</h3>
+                                        <small>LivingFountain Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/cculivingfountainoflife/">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>喜信社</h3>
+                                        <small>?? Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="#">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>紫荊圍棋社</h3>
+                                        <small>Go Game Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/nccugogame">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>福智青年社</h3>
+                                        <small>Bliss & Wisdom Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/ccubwy">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>紫荊茶藝社</h3>
+                                        <small>Tea Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/%E4%B8%AD%E6%AD%A3%E7%B4%AB%E8%8D%8A%E8%8C%B6%E8%97%9D%E7%A4%BE-528268050656354">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>酷斯拉社</h3>
+                                        <small>QSL Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/CCUQSL/">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>烘焙研究社</h3>
+                                        <small>Baking Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/CCUBaking">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>中智佛學社</h3>
+                                        <small>CCBC Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/ccuccbc">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>理財研究社</h3>
+                                        <small>Financial Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/ccufinancialclub">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>創新創業社</h3>
+                                        <small>Innovation Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/ArgoInnovation/">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>國際經濟商管學生會</h3>
+                                        <small>??? Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="#">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>仁風社</h3>
+                                        <small>Humanity Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="#">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.facebook.com/Chiayi%E4%BB%81%E9%A2%A8%E7%A4%BE-1332416053582771">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>公共事務研習社</h3>
+                                        <small>Public Affairs Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="#">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.facebook.com/CCUPublicAffairsClub/">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>鳳梨田橋牌社</h3>
+                                        <small>Bridge Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="#">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.facebook.com/%E4%B8%AD%E6%AD%A3%E5%A4%A7%E5%AD%B8%E9%B3%B3%E6%A2%A8%E7%94%B0%E6%A9%8B%E7%89%8C%E7%A4%BE-CCU-Bridge-114438143537999/">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>SPIE&OSA學生分會</h3>
+                                        <small>SPIE & OSA Student Chapter</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="#">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.facebook.com/%E4%B8%AD%E6%AD%A3%E5%A4%A7%E5%AD%B8SPIE-OSA%E5%AD%B8%E7%94%9F%E5%88%86%E6%9C%83-105611388081103">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div> 
+
+
+
+                    </div>           
+                </div>
+
+                <div class="container clublist sporting" id='sporting_clubs'  style="display: none;" >
+                    <div class="row gx-4 gx-lg-5">
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>嵐星登山社</h3>
+                                        <small>Mountaineering Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="#">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.notion.so/ccumount/fda7ed49b13d427eb64ef6c987dd1ef3">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>太極拳藝社</h3>
+                                        <small>Taichi Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="#">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.facebook.com/ccutaichi">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>水上活動社</h3>
+                                        <small>Swimming Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="#">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.facebook.com/CCUSWIMMING/">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>國術社</h3>
+                                        <small>Kungfu Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="#">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.facebook.com/CCUkungfu">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>空手道社</h3>
+                                        <small>??? Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="#">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.facebook.com/CCUKC">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>自由搏擊社</h3>
+                                        <small>Freecombat Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="#">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.facebook.com/CCUfreecombat/">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>網球社</h3>
+                                        <small>Tennis Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="#">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.facebook.com/tennis.in.ccu">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>瑜珈社</h3>
+                                        <small>Yoga Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="#">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.facebook.com/%E4%B8%AD%E6%AD%A3%E5%A4%A7%E5%AD%B8%E7%91%9C%E7%8F%88%E7%A4%BE-CCU-YOGA-263153820726376">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>生存遊戲社</h3>
+                                        <small>Airsoft Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="#">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.facebook.com/%E4%B8%AD%E6%AD%A3%E5%A4%A7%E5%AD%B8-%E7%94%9F%E5%AD%98%E9%81%8A%E6%88%B2%E7%A4%BE-542545909177948/?fref=ts">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>滑板社</h3>
+                                        <small>Skateboard Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="#">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.facebook.com/%E4%B8%AD%E6%AD%A3%E5%A4%A7%E5%AD%B8%E6%BB%91%E6%9D%BF%E7%A4%BE-CCU-skateboard-114595333591882">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>鳳梨魔鬼軟式棒球社</h3>
+                                        <small>Baseball Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="#">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.facebook.com/%E9%B3%B3%E6%A2%A8%E9%AD%94%E9%AC%BC%E8%BB%9F%E5%BC%8F%E6%A3%92%E7%90%83%E9%9A%8A-100862632139293">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>板球社</h3>
+                                        <small>Cricket Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="#">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.facebook.com/%E9%B3%B3%E6%A2%A8%E9%AD%94%E9%AC%BC%E8%BB%9F%E5%BC%8F%E6%A3%92%E7%90%83%E9%9A%8A-100862632139293">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div> 
+
+                              
+                    </div>           
+                </div>
+
+                <div class="container clublist recreational" id='recreational_clubs'  style="display: none;" >
+                    <div class="row gx-4 gx-lg-5">
+                        <div class="col-lg-4 col-md-6 text-center" >
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>熱舞社</h3>
+                                        <small>Pop Dance Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/CCUPOPDANCE">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center" >
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>魔術社</h3>
+                                        <small>Magic Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/CCUMagic/">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center" >
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>嘻哈文化研究社</h3>
+                                        <small>HipHop Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/CCUHipHop/">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center" >
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>慕容手語社</h3>
+                                        <small>HipHop Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/CCUMRSL">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center" >
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>韓國文化研究社</h3>
+                                        <small>K-POP Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/CCUKPOP/">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center" >
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>日本麻雀研究社</h3>
+                                        <small>Japanese Mahjong Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/CCUJMC/">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+      
+                    </div>           
+                </div>
+
+                <div class="container clublist fellowship" id='fellowship_clubs'  style="display: none;" >
+                    <div class="row gx-4 gx-lg-5">
+                        <div class="col-lg-4 col-md-6 text-center" >
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>南友會</h3>
+                                        <small>Tainan Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/ccutainan/">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center" >
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>中友會</h3>
+                                        <small>TaiChung Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/%E4%B8%AD%E6%AD%A3%E5%A4%A7%E5%AD%B8%E4%B8%AD%E5%8F%8B%E6%9C%83-1524536111091236/">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center" >
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>竹苗校友會</h3>
+                                        <small>HM Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/CCUHMCLUB">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center" >
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>蘭陽校友會</h3>
+                                        <small>Kavalan Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/CCUKavalan">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center" >
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>僑生聯誼會</h3>
+                                        <small>OCSA</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://ccuocs.wixsite.com/ccuocsa">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center" >
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>雄友會</h3>
+                                        <small>Bear Yo</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/CCUbearyo">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center" >
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>彰友會</h3>
+                                        <small>CHANGE</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E6%AD%A3%E5%A4%A7%E5%AD%B8%E5%BD%B0%E5%8F%8B%E6%9C%83-364628186946693/">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center" >
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>桃聯會</h3>
+                                        <small>CCU taoyuan</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/CCUtaoyuan/">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center" >
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>雲嘉校友會</h3>
+                                        <small>CCU taoyuan</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/YCourhome">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+
+                    </div>           
+                </div>
+
+                <div class="container clublist ministrant" id='ministrant_clubs'  style="display: none;" >
+                    <div class="row gx-4 gx-lg-5">
+                        <div class="col-lg-4 col-md-6 text-center" >
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>光鹽社</h3>
+                                        <small>Light & Salt Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/groups/112262658856353/">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div>     
+                    </div>           
+                </div>
+
+                <div class="container clublist artistic" id='artistic_clubs'  style="display: none;" >
+                    <div class="row gx-4 gx-lg-5">
+                        <div class="col-lg-4 col-md-6 text-center" >
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>光鹽社</h3>
+                                        <small>Light & Salt Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/groups/112262658856353/">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div>     
+                    </div>           
+                </div>
+
+                <div class="container clublist musical" id='musical_clubs'  style="display: none;" >
+                    <div class="row gx-4 gx-lg-5">
+                        <div class="col-lg-4 col-md-6 text-center" >
+                            <div class="mt-5">
+                                <div class="info">
+                                    <div class="mb-2">
+                                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/example.png">
+                                            <img src="assets/img/portfolio/fullsize/example.png" alt="...">
+                                        </a>
+                                    </div>
+                                        <h3>光鹽社</h3>
+                                        <small>Light & Salt Club</small>
+                                        <hr>
+                                        <i class="bi bi-facebook" ></i>
+                                        <a href="https://www.facebook.com/groups/112262658856353/">社團網站</a>
+                                        <i class="bi bi-youtube"></i>
+                                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">影片介紹</a>
+                                        <i class="bi bi-cup"></i>
+                                        <a href="https://forms.gle/cgtGd7amtifPc8mU7">期初報名</a>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>           
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2021 - 中正大學課外活動組</div></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+
+        <!--Handle tabs-->
+        <script>
+        function Open(evt,type){
+            var i,cont;
+            cont = document.getElementsByClassName('clublist');
+            for(i=0;i<cont.length;i++){
+                cont[i].style.display='none';
+            }
+            cont = document.getElementsByClassName('position');
+            for(i=0;i<cont.length;i++){
+                cont[i].style.display='none';
+            }
+
+            cont = document.getElementsByClassName(type);
+            for(i=0;i<cont.length;i++){
+                cont[i].style.display='block';
+            }
+        }
+        </script>
+
+
+    </body>
+</html>
